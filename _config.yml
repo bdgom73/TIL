@@ -26,7 +26,7 @@ defaults:
       author_profile: true
       sidebar:
         - title: "전체 글 목록"
-          include: sidebar-archive.html
+          include: sidebar-archive.md
 
   # 2. 포스트에만 적용될 추가/덮어쓰기 값
   - scope:
