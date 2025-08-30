@@ -1,0 +1,7 @@
+# _config.yml
+
+# 테마 설정
+theme: jekyll-theme-cayman
+
+title: "Gom's TIL"
+description: "배우고 기록하는 기술 블로그"
