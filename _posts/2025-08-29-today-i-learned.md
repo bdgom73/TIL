@@ -1,5 +1,5 @@
 ---
-title: "2025년 08월 29일 Today I Learned"
+title: "Vercel 배포 시 Serverless Function 사이즈 초과 문제 해결하기"
 date: 2025-08-29
 categories: [TIL, Daily]
 tags: [TIL, Daily, Learning]
@@ -7,7 +7,7 @@ excerpt: "2025년 8월 29일 학습한 내용을 정리한 TIL 글입니다."
 author_profile: true
 ---
 
-# Vercel 배포 시 Serverless Function 사이즈 초과 문제 해결하기
+# Today I Learned: Vercel 배포 시 Serverless Function 사이즈 초과 문제 해결하기
 
 오늘 Next.js 프로젝트를 Vercel에 배포하던 중 빌드가 실패하는 이슈를 겪었습니다. 원인을 분석하고 해결하는 과정을 정리해 보았습니다.
 
