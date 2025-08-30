@@ -42,7 +42,47 @@ collections:
     output: true
     permalink: /:collection/:year-:month-:day-:title/
 
-# --- 기본 레이아웃 설정 ---
+# --- Minimal Mistakes 테마 네비게이션 설정 ---
+# 메인 네비게이션 (헤더)
+masthead_title: "Gom's TIL"
+
+# 사이드바 네비게이션
+sidebar:
+  - title: "📅 날짜별 이동"
+    image: 
+    image_alt: 
+    text: "날짜별로 정리된 글 목록"
+    nav: sidebar-date-navigation
+  - title: "🆕 최근 글"
+    image: 
+    image_alt: 
+    text: "최근에 작성된 글들"
+    nav: sidebar-recent
+  - title: "📁 카테고리별"
+    image: 
+    image_alt: 
+    text: "카테고리별로 분류된 글들"
+    nav: sidebar-categories
+  - title: "🏷️ 태그별"
+    image: 
+    image_alt: 
+    text: "태그별로 분류된 글들"
+    nav: sidebar-tags
+  - title: "📚 전체 글 목록"
+    image: 
+    image_alt: 
+    text: "모든 글 목록"
+    nav: sidebar-archive
+
+# 테마 기본 위젯 활성화
+widgets:
+  - search
+  - category_list
+  - tag_list
+  - recent_posts
+  - archive
+
+# 기본 레이아웃 설정
 defaults:
   - scope:
       path: ""
@@ -52,6 +92,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      sidebar: true
 
 # --- SEO 및 소셜 ---
 seo:
