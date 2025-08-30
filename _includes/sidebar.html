@@ -1,8 +1,0 @@
-{% if page.sidebar %}
-  <div class="sidebar-content">
-    {% for item in page.sidebar %}
-      <h3>{{ item.title }}</h3>
-      {% include {{ item.include }} %}
-    {% endfor %}
-  </div>
-{% endif %}
