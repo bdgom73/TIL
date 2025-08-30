@@ -10,6 +10,10 @@ plugins:
 title: "Gom's TIL"
 description: "배우고 기록하는 기술 블로그"
 
+collections:
+  posts:
+    output: true
+
 # --- 기본 레이아웃 및 사이드바 설정 ---
 defaults:
   # 1. 모든 페이지에 적용될 기본값
