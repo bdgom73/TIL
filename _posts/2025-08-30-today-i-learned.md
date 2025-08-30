@@ -1,8 +1,10 @@
 ---
-title: 2025년 08월 30일 Today I Learned
-date : 2025-08-30
-categories: Java
-tags: Java
+title: "Java 버전별 핵심 정리 (8, 11, 17, 21, 25)"
+date: 2025-08-30
+categories: [Java, Programming]
+tags: [Java, Java8, Java11, Java17, Java21, Java25, Lambda, Stream, Records, VirtualThreads]
+excerpt: "Java의 주요 릴리스 버전별 특징을 정리했습니다. Java 8의 람다와 스트림부터 Java 21의 가상 스레드까지, 각 버전의 핵심 기능들을 알아보세요."
+author_profile: true
 ---
 
 # Today I Learned: Java 버전별 핵심 정리 (8, 11, 17, 21, 25)

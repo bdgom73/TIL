@@ -1,51 +1,115 @@
-# _config.yml
+# _config.yml - GitHub Pages TIL 블로그 최적화 설정
+
+# --- Jekyll 기본 설정 ---
+title: "Gom's TIL"
+description: "매일 배우고 기록하는 Today I Learned 블로그"
+url: "https://bdgom73.github.io"
+baseurl: "/TIL"
+lang: "ko-KR"
+timezone: "Asia/Seoul"
+
+# --- GitHub Pages 설정 ---
+github:
+  repository: "bdgom73/TIL"
+  branch: "main"
 
 # --- 테마 설정 ---
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 
 # --- 블로그 정보 ---
-title: "Gom's TIL"
-description: "배우고 기록하는 기술 블로그"
-url: "https://bdgom73.github.io"
-baseurl: "/TIL" # GitHub Pages 리포지토리 이름
-
-# --- 컬렉션 설정 ---
-collections:
-  posts:
-    output: true
-
-# --- 기본 레이아웃 및 사이드바 설정 ---
-defaults:
-  # 1. 모든 페이지에 적용될 기본값
-  - scope:
-      path: "" # 모든 경로
-    values:
-      author_profile: true
-      sidebar:
-        - title: "전체 글 목록"
-        - include: sidebar-archive.md
-
-  # 2. 포스트에만 적용될 추가/덮어쓰기 값
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: single
-
-# --- SEO 및 소셜 ---
 author:
   name: "Gom"
   bio: "기술을 배우고 기록하는 개발자"
   location: "Seoul, South Korea"
   email: "bdgom73@naver.com"
+  avatar: "https://via.placeholder.com/150x150/007acc/ffffff?text=G"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/bdgom73"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "#"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:bdgom73@naver.com"
 
-# --- Pagination ---
-paginate: 5
+# --- 컬렉션 설정 ---
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:year-:month-:day-:title/
+
+# --- 기본 레이아웃 설정 ---
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+      sidebar:
+        - title: "최근 글"
+          include: sidebar-recent.md
+        - title: "카테고리별"
+          include: sidebar-categories.md
+        - title: "태그별"
+          include: sidebar-tags.md
+        - title: "전체 아카이브"
+          include: sidebar-archive.md
+
+# --- 페이지네이션 ---
+paginate: 10
 paginate_path: "/page:num/"
+
+# --- SEO 및 소셜 ---
+seo:
+  title: "Gom's TIL - Today I Learned"
+  description: "매일 배우고 기록하는 기술 블로그"
+  image: "https://via.placeholder.com/1200x630/007acc/ffffff?text=Gom's+TIL"
+  type: "website"
+
+# --- 소셜 공유 설정 ---
+social:
+  type: "Person"
+  name: "Gom"
+  links:
+    - "https://github.com/bdgom73"
+
+# --- 검색 설정 ---
+search: true
+
+# --- 댓글 시스템 ---
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "your-disqus-shortname"
+
+# --- 분석 도구 ---
+analytics:
+  provider: "google"
+  google:
+    tracking_id: ""
+
+# --- 추가 설정 ---
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+      start_line: 1
+
+# --- 플러그인 설정 ---
+include: ["_pages"]
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]

@@ -1,8 +1,10 @@
 ---
-title: 2025년 08월 29일 Today I Learned
+title: "2025년 08월 29일 Today I Learned"
 date: 2025-08-29
-categories: Vercel
-tags: Serverless 빌드 최적화 캐시 관리
+categories: [TIL, Daily]
+tags: [TIL, Daily, Learning]
+excerpt: "2025년 8월 29일 학습한 내용을 정리한 TIL 글입니다."
+author_profile: true
 ---
 
 # Vercel 배포 시 Serverless Function 사이즈 초과 문제 해결하기
