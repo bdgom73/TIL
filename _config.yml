@@ -111,8 +111,8 @@ kramdown:
       start_line: 1
 
 # --- Jekyll 처리 설정 ---
-include: ["_pages"]
-exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+# include: ["_pages"]  # 일시적으로 비활성화
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "_pages"]
 
 # --- Liquid 템플릿 처리 설정 ---
 liquid:
