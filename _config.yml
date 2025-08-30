@@ -4,19 +4,13 @@
 # theme: jekyll-theme-cayman
 
 remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-remote-theme
 
 title: "Gom's TIL"
 description: "배우고 기록하는 기술 블로그"
 
-# 컬렉션(Collections) 설정
-collections:
-  posts:
-    output: true
-    permalink: /:year/:month/:day/:name
-
-# 기본값 설정
 defaults:
-  # _posts 폴더에 있는 모든 파일
   - scope:
       path: ""
       type: "posts"

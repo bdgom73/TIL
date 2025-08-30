@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: home
 title: 전체 글 목록 (아카이브)
 ---
 
-# Archive
+# 전체 글 목록
 
 이 페이지는 모든 글을 연도와 월별로 정리한 목록입니다.
 
