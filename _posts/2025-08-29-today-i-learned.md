@@ -1,8 +1,12 @@
 ---
 title: 2025년 08월 29일 Today I Learned
 date: 2025-08-29
-categories: ['Vercel']
-tags: ['Serverless', '빌드 최적화', '캐시 관리']
+categories:
+  - Vercel
+tags:
+  - Serverless
+  - 빌드 최적화
+  - 캐시 관리
 ---
 
 # Vercel 배포 시 Serverless Function 사이즈 초과 문제 해결하기
