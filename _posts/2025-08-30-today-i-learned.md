@@ -1,6 +1,8 @@
 ---
 title: 2025년 08월 30일 Today I Learned
 date : 2025-08-30
+categories: ['Java']
+tags: ['Java']
 ---
 
 # Today I Learned: Java 버전별 핵심 정리 (8, 11, 17, 21, 25)
