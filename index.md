@@ -4,10 +4,10 @@ layout: default
 
 # Today I Learned
 
-전체 글 목록입니다.
+{% assign sorted_posts = site.posts | sort: "date" | reverse %}
 
 <ul>
-  {% for post in site.posts %}
+  {% for post in sorted_posts %}
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})
     </li>
