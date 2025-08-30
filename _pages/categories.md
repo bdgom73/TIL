@@ -7,11 +7,10 @@ author_profile: true
 
 # 📁 카테고리별 글
 
-총 **{% raw %}{{ site.categories.size }}{% endraw %}**개의 카테고리로 분류된 글들을 확인할 수 있습니다.
+총 **{{ site.categories.size }}**개의 카테고리로 분류된 글들을 확인할 수 있습니다.
 
 ## 📊 카테고리 통계
 
-{% raw %}
 {% for category in site.categories %}
 {% assign category_name = category[0] %}
 {% assign posts_count = category[1].size %}
@@ -55,7 +54,6 @@ author_profile: true
 <hr class="category-divider">
 {% endunless %}
 {% endfor %}
-{% endraw %}
 
 <style>
 .category-section {

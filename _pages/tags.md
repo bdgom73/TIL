@@ -7,7 +7,7 @@ author_profile: true
 
 # 🏷️ 태그별 글
 
-총 **{% raw %}{{ site.tags.size }}{% endraw %}**개의 태그로 분류된 글들을 확인할 수 있습니다.
+총 **{{ site.tags.size }}**개의 태그로 분류된 글들을 확인할 수 있습니다.
 
 ## 🔍 태그 검색
 
@@ -17,7 +17,6 @@ author_profile: true
 
 ## 📊 태그 통계
 
-{% raw %}
 {% assign tags = site.tags | sort_by: 'size' | reverse %}
 {% for tag in tags %}
 {% assign tag_name = tag[0] %}
@@ -63,7 +62,6 @@ author_profile: true
 <hr class="tag-divider">
 {% endunless %}
 {% endfor %}
-{% endraw %}
 
 <style>
 .tag-search {

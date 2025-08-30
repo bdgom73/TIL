@@ -7,11 +7,10 @@ author_profile: true
 
 # 📖 전체 글 목록
 
-총 **{% raw %}{{ site.posts.size }}{% endraw %}**개의 TIL 글을 확인할 수 있습니다.
+총 **{{ site.posts.size }}**개의 TIL 글을 확인할 수 있습니다.
 
 ## 📅 최신 글부터 보기
 
-{% raw %}
 {% for post in site.posts %}
 <div class="post-item">
   <article class="post-preview">
@@ -61,7 +60,6 @@ author_profile: true
 <hr class="post-divider">
 {% endunless %}
 {% endfor %}
-{% endraw %}
 
 <style>
 .post-item {

@@ -5,7 +5,6 @@ layout: none
 <div class="sidebar-categories">
   <h4>📁 카테고리별</h4>
   <div class="categories-list">
-    {% raw %}
     {% for category in site.categories %}
     {% assign category_name = category[0] %}
     {% assign posts_count = category[1].size %}
@@ -16,7 +15,6 @@ layout: none
       </a>
     </div>
     {% endfor %}
-    {% endraw %}
   </div>
 </div>
 

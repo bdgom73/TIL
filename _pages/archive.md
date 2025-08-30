@@ -7,11 +7,10 @@ author_profile: true
 
 # 📅 연도별 아카이브
 
-총 **{% raw %}{{ site.posts.size }}{% endraw %}**개의 TIL 글을 연도별로 정리했습니다.
+총 **{{ site.posts.size }}**개의 TIL 글을 연도별로 정리했습니다.
 
 ## 📊 연도별 통계
 
-{% raw %}
 {% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse %}
 {% for year in years %}
 {% assign year_name = year.name %}
@@ -73,7 +72,6 @@ author_profile: true
 <hr class="year-divider">
 {% endunless %}
 {% endfor %}
-{% endraw %}
 
 <style>
 .year-section {

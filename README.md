@@ -103,9 +103,16 @@ TIL/
 
 ## 🌐 배포
 
-### GitHub Pages 자동 배포
-1. `main` 브랜치에 푸시하면 자동으로 배포됩니다
-2. 배포 URL: `https://bdgom73.github.io/TIL`
+### GitHub Pages 자동 배포 (권장)
+1. **GitHub 저장소 설정**:
+   - 저장소 → Settings → Pages
+   - Source: "GitHub Actions" 선택
+   - Branch: `main` 선택
+
+2. **자동 워크플로우**:
+   - GitHub가 자동으로 Jekyll 워크플로우 생성
+   - `main` 브랜치에 푸시하면 자동 배포
+   - 배포 URL: `https://bdgom73.github.io/TIL`
 
 ### 수동 배포
 ```bash

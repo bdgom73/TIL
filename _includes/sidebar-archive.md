@@ -5,7 +5,6 @@ layout: none
 <div class="sidebar-archive">
   <h4>📚 전체 글 목록</h4>
   <ul class="archive-list">
-    {% raw %}
     {% for post in site.posts limit:10 %}
     <li class="archive-item">
       <a href="{{ site.baseurl }}{{ post.url }}" class="archive-link">
@@ -14,7 +13,6 @@ layout: none
       </a>
     </li>
     {% endfor %}
-    {% endraw %}
   </ul>
   <div class="archive-more">
     <a href="{{ site.baseurl }}/posts/" class="btn btn--small">전체 보기</a>

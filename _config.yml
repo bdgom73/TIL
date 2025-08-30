@@ -9,6 +9,7 @@ lang: "ko-KR"
 timezone: "Asia/Seoul"
 
 # --- GitHub Pages 설정 ---
+# GitHub Pages에서 제공하는 기본 워크플로우 사용
 github:
   repository: "bdgom73/TIL"
   branch: "main"
@@ -110,6 +111,16 @@ kramdown:
       line_numbers: false
       start_line: 1
 
-# --- 플러그인 설정 ---
+# --- Jekyll 처리 설정 ---
 include: ["_pages"]
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+
+# --- Liquid 템플릿 처리 설정 ---
+liquid:
+  error_mode: warn
+  strict_variables: false
+  strict_filters: false
+
+# --- 빌드 설정 ---
+incremental: false
+future: false

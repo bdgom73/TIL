@@ -5,7 +5,6 @@ layout: none
 <div class="sidebar-tags">
   <h4>🏷️ 인기 태그</h4>
   <div class="tags-cloud">
-    {% raw %}
     {% assign tags = site.tags | sort_by: 'size' | reverse %}
     {% for tag in tags limit:15 %}
     {% assign tag_name = tag[0] %}
@@ -18,7 +17,6 @@ layout: none
       <span class="tag-count">{{ posts_count }}</span>
     </a>
     {% endfor %}
-    {% endraw %}
   </div>
   <div class="tags-more">
     <a href="{{ site.baseurl }}/tags/" class="btn btn--small">전체 태그</a>

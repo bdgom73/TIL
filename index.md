@@ -11,7 +11,6 @@ author_profile: true
 
 ## 📚 최근 학습 내용
 
-{% raw %}
 {% for post in site.posts limit:5 %}
 <div class="post-preview">
   <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
@@ -29,7 +28,6 @@ author_profile: true
   {% endif %}
 </div>
 {% endfor %}
-{% endraw %}
 
 ## 🚀 빠른 탐색
 
@@ -47,12 +45,10 @@ author_profile: true
 
 ## 📈 학습 통계
 
-{% raw %}
 - **총 글 수**: {{ site.posts.size }}개
 - **카테고리 수**: {{ site.categories.size }}개
 - **태그 수**: {{ site.tags.size }}개
 - **마지막 업데이트**: {{ site.posts.first.date | date: "%Y년 %m월 %d일" }}
-{% endraw %}
 
 ---
 

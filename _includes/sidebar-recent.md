@@ -5,7 +5,6 @@ layout: none
 <div class="sidebar-recent">
   <h4>🆕 최근 글</h4>
   <ul class="recent-list">
-    {% raw %}
     {% for post in site.posts limit:5 %}
     <li class="recent-item">
       <a href="{{ site.baseurl }}{{ post.url }}" class="recent-link">
@@ -19,7 +18,6 @@ layout: none
       </a>
     </li>
     {% endfor %}
-    {% endraw %}
   </ul>
 </div>
 
@@ -60,6 +58,7 @@ layout: none
 }
 
 .recent-title {
+  flex: 1;
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.3;
