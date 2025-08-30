@@ -47,43 +47,10 @@ defaults:
       path: ""
       type: "posts"
     values:
-      sidebar: true  # ← 이게 핵심!
+      layout: single
       author_profile: true
       share: true
       comments: true
-
-# --- 사이드바 설정 ---
-sidebar:  # ← 커스텀 사이드바 설정
-  - title: "📅 날짜별 이동"
-    nav: sidebar-date-navigation
-  - title: "🆕 최근 글"
-    image: 
-    image_alt: 
-    text: "최근에 작성된 글들"
-    nav: sidebar-recent
-  - title: "📁 카테고리별"
-    image: 
-    image_alt: 
-    text: "카테고리별로 분류된 글들"
-    nav: sidebar-categories
-  - title: "🏷️ 태그별"
-    image: 
-    image_alt: 
-    text: "태그별로 분류된 글들"
-    nav: sidebar-tags
-  - title: "📚 전체 글 목록"
-    image: 
-    image_alt: 
-    text: "모든 글 목록"
-    nav: sidebar-archive
-
-# --- 테마 기본 위젯 활성화 ---
-widgets:  # ← 테마 기본 위젯
-  - search
-  - category_list
-  - tag_list
-  - recent_posts
-  - archive
 
 # --- SEO 및 소셜 ---
 seo:
