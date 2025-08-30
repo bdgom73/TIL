@@ -9,7 +9,6 @@ lang: "ko-KR"
 timezone: "Asia/Seoul"
 
 # --- GitHub Pages 설정 ---
-# GitHub Pages에서 제공하는 기본 워크플로우 사용
 github:
   repository: "bdgom73/TIL"
   branch: "main"
@@ -17,7 +16,7 @@ github:
 # --- 테마 설정 ---
 remote_theme: "mmistakes/minimal-mistakes"
 
-# --- 플러그인 설정 (GitHub Pages와 호환되는 것만) ---
+# --- 플러그인 설정 ---
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
@@ -42,16 +41,20 @@ collections:
     output: true
     permalink: /:collection/:year-:month-:day-:title/
 
-# --- Minimal Mistakes 테마 네비게이션 설정 ---
-# 메인 네비게이션 (헤더)
-masthead_title: "Gom's TIL"
+# --- 기본 레이아웃 설정 ---
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      sidebar: true  # ← 이게 핵심!
+      author_profile: true
+      share: true
+      comments: true
 
-# 사이드바 네비게이션
-sidebar:
+# --- 사이드바 설정 ---
+sidebar:  # ← 커스텀 사이드바 설정
   - title: "📅 날짜별 이동"
-    image: 
-    image_alt: 
-    text: "날짜별로 정리된 글 목록"
     nav: sidebar-date-navigation
   - title: "🆕 최근 글"
     image: 
@@ -74,25 +77,13 @@ sidebar:
     text: "모든 글 목록"
     nav: sidebar-archive
 
-# 테마 기본 위젯 활성화
-widgets:
+# --- 테마 기본 위젯 활성화 ---
+widgets:  # ← 테마 기본 위젯
   - search
   - category_list
   - tag_list
   - recent_posts
   - archive
-
-# 기본 레이아웃 설정
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-      sidebar: true
 
 # --- SEO 및 소셜 ---
 seo:
@@ -121,8 +112,7 @@ kramdown:
       start_line: 1
 
 # --- Jekyll 처리 설정 ---
-# include: ["_pages"]  # 일시적으로 비활성화
-exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/", "_pages"]
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
 
 # --- Liquid 템플릿 처리 설정 ---
 liquid:
