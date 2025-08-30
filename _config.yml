@@ -16,8 +16,8 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: single # Minimal Mistakes 테마의 기본 글 레이아웃
-      author_profile: true # 사이드바에 작성자 프로필 표시
+      layout: single
+      author_profile: true
       sidebar:
         - title: "전체 글 목록"
-          html: '{% include sidebar-archive.html %}' # 우리가 만든 사이드바 파일을 여기에 포함
+          include: sidebar-archive.html
