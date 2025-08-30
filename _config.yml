@@ -42,34 +42,6 @@ collections:
     output: true
     permalink: /:collection/:year-:month-:day-:title/
 
-# --- Minimal Mistakes 테마 사이드바 설정 ---
-sidebar:
-  - title: "📅 날짜별 이동"
-    image: 
-    image_alt: 
-    text: "날짜별로 정리된 글 목록"
-    nav: sidebar-date-navigation
-  - title: "🆕 최근 글"
-    image: 
-    image_alt: 
-    text: "최근에 작성된 글들"
-    nav: sidebar-recent
-  - title: "📁 카테고리별"
-    image: 
-    image_alt: 
-    text: "카테고리별로 분류된 글들"
-    nav: sidebar-categories
-  - title: "🏷️ 태그별"
-    image: 
-    image_alt: 
-    text: "태그별로 분류된 글들"
-    nav: sidebar-tags
-  - title: "📚 전체 글 목록"
-    image: 
-    image_alt: 
-    text: "모든 글 목록"
-    nav: sidebar-archive
-
 # --- 기본 레이아웃 설정 ---
 defaults:
   - scope:
