@@ -2,8 +2,6 @@
 layout: none
 ---
 
-### 전체 글 목록
-
 <ul>
 {% for post in site.posts %}
   <li>
