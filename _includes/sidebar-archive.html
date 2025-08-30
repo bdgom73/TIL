@@ -2,16 +2,16 @@
   {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
     <li>
-      <a href="#" class="nav__sub-title">{{ year.name }}년</a>
+      <span class="nav__sub-title">{{ year.name }}년</span>
       <ul>
         {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%-m'" %}
         {% for month in postsByMonth %}
           <li>
-            <a href="#">{{ month.name }}월</a>
+            <span>{{ month.name }}월</span>
             <ul>
-            {% for post in month.items %}
-              <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
+              {% for post in month.items %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
             </ul>
           </li>
         {% endfor %}

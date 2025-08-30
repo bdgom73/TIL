@@ -1,6 +1,9 @@
 ---
 layout: home
 title: 전체 글 목록 (아카이브)
+sidebar:
+  - title: "전체 글 목록"
+    include: sidebar-archive.html
 ---
 
 # 전체 글 목록
