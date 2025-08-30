@@ -19,7 +19,6 @@ remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
-  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
@@ -68,9 +67,9 @@ defaults:
         - title: "전체 아카이브"
           include: sidebar-archive.md
 
-# --- 페이지네이션 ---
-paginate: 10
-paginate_path: "/page:num/"
+# --- 페이지네이션 (GitHub Pages와 호환성 문제로 일시 제거) ---
+# paginate: 10
+# paginate_path: "/page:num/"
 
 # --- SEO 및 소셜 ---
 seo:
