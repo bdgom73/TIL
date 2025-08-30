@@ -1,8 +1,9 @@
+<h3>📚 전체 글 목록</h3>
 <ul>
   {% for post in site.posts %}
     <li>
       <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
+        {{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}
       </a>
     </li>
   {% endfor %}
