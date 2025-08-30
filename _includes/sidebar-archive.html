@@ -1,21 +1,25 @@
-<ul>
-  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
-  {% for year in postsByYear %}
-    <li>
-      <span class="nav__sub-title">{{ year.name }}년</span>
-      <ul>
-        {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%-m'" %}
-        {% for month in postsByMonth %}
-          <li>
-            <span>{{ month.name }}월</span>
-            <ul>
-              {% for post in month.items %}
-                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </li>
-        {% endfor %}
-      </ul>
-    </li>
-  {% endfor %}
-</ul>
+<nav class="nav__list">
+  <ul class="nav__items">
+    {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+    {% for year in postsByYear %}
+      <li>
+        <span class="nav__sub-title">{{ year.name }}년</span>
+        <ul>
+          {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%-m'" %}
+          {% for month in postsByMonth %}
+            <li>
+              <a href="#" class="nav__item--sub-title">{{ month.name }}월</a>
+              <ul class="nav__item-children">
+                {% for post in month.items %}
+                  <li>
+                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
