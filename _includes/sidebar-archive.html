@@ -1,0 +1,21 @@
+<ul>
+  {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% for year in postsByYear %}
+    <li>
+      <a href="#" class="nav__sub-title">{{ year.name }}년</a>
+      <ul>
+        {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%-m'" %}
+        {% for month in postsByMonth %}
+          <li>
+            <a href="#">{{ month.name }}월</a>
+            <ul>
+            {% for post in month.items %}
+              <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,6 +1,6 @@
 ---
 title: 2025년 08월 29일 Today I Learned
-date : 2025-08-29
+date: 2025-08-29
 ---
 
 # 2025.08.29 TIL
