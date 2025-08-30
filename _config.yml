@@ -33,9 +33,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/bdgom73"
-    - label: "Email"
-      icon: "fas fa-envelope"
-      url: "mailto:bdgom73@naver.com"
 
 # --- 컬렉션 설정 ---
 collections:
@@ -54,13 +51,15 @@ defaults:
       share: true
       comments: true
       sidebar:
-        - title: "최근 글"
+        - title: "📅 날짜별 이동"
+          include: sidebar-date-navigation.md
+        - title: "🆕 최근 글"
           include: sidebar-recent.md
-        - title: "카테고리별"
+        - title: "📁 카테고리별"
           include: sidebar-categories.md
-        - title: "태그별"
+        - title: "🏷️ 태그별"
           include: sidebar-tags.md
-        - title: "전체 아카이브"
+        - title: "📚 전체 글 목록"
           include: sidebar-archive.md
 
 # --- 페이지네이션 (GitHub Pages와 호환성 문제로 일시 제거) ---
