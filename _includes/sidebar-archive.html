@@ -8,7 +8,7 @@
           {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%-m'" %}
           {% for month in postsByMonth %}
             <li>
-              <a href="#" class="nav__item--sub-title">{{ month.name }}월</a>
+              <a href="#" class="nav__item--sub-title" style="pointer-events: none;">{{ month.name }}월</a>
               <ul class="nav__item-children">
                 {% for post in month.items %}
                   <li>

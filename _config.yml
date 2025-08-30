@@ -1,23 +1,31 @@
 # _config.yml
 
 # 테마 설정
-# theme: jekyll-theme-cayman
-
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
+# 블로그 정보
 title: "Gom's TIL"
 description: "배우고 기록하는 기술 블로그"
+url: "" # GitHub Pages 배포 시 여기에 주소를 입력하세요. 예: https://username.github.io
+baseurl: "" # Repository 이름. 예: /TIL
 
+# --- 기본 레이아웃 및 사이드바 설정 ---
 defaults:
+  # 1. 모든 페이지에 적용될 기본값
+  - scope:
+      path: "" # 모든 경로
+    values:
+      author_profile: true
+      sidebar:
+        - title: "전체 글 목록"
+          include: sidebar-archive.html
+
+  # 2. 포스트에만 적용될 추가/덮어쓰기 값
   - scope:
       path: ""
       type: "posts"
     values:
       layout: single
-      author_profile: true
-      sidebar:
-        - title: "전체 글 목록"
-          include: sidebar-archive.html
