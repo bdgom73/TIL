@@ -1,7 +1,28 @@
 # _config.yml
 
 # 테마 설정
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
+
+remote_theme: "mmistakes/minimal-mistakes-jekyll@4.24.0"
 
 title: "Gom's TIL"
 description: "배우고 기록하는 기술 블로그"
+
+# 컬렉션(Collections) 설정
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:name
+
+# 기본값 설정
+defaults:
+  # _posts 폴더에 있는 모든 파일
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: single # Minimal Mistakes 테마의 기본 글 레이아웃
+      author_profile: true # 사이드바에 작성자 프로필 표시
+      sidebar:
+        - title: "전체 글 목록"
+          html: '{% include sidebar-archive.html %}' # 우리가 만든 사이드바 파일을 여기에 포함
