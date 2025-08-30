@@ -29,13 +29,6 @@ author_profile: true
 </div>
 {% endfor %}
 
-## 🚀 빠른 탐색
-
-- **[📖 전체 글 목록]({{ site.baseurl }}/posts/)** - 모든 TIL 글을 한눈에
-- **[🏷️ 카테고리별]({{ site.baseurl }}/categories/)** - 주제별로 정리된 글들
-- **[🔍 태그 검색]({{ site.baseurl }}/tags/)** - 키워드로 원하는 내용 찾기
-- **[📅 연도별 아카이브]({{ site.baseurl }}/archive/)** - 시간순으로 정리된 글들
-
 ## 💡 이 블로그는...
 
 - **매일 학습한 내용**을 체계적으로 정리
@@ -52,4 +45,4 @@ author_profile: true
 
 ---
 
-*더 많은 내용을 보고 싶으시다면 [전체 글 목록]({{ site.baseurl }}/posts/)을 확인해보세요!*
+*매일 배우고 기록하는 것이 중요합니다! 🚀*

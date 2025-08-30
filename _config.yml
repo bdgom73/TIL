@@ -29,14 +29,10 @@ author:
   bio: "기술을 배우고 기록하는 개발자"
   location: "Seoul, South Korea"
   email: "bdgom73@naver.com"
-  avatar: "https://via.placeholder.com/150x150/007acc/ffffff?text=G"
   links:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/bdgom73"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "#"
     - label: "Email"
       icon: "fas fa-envelope"
       url: "mailto:bdgom73@naver.com"
@@ -75,7 +71,7 @@ defaults:
 seo:
   title: "Gom's TIL - Today I Learned"
   description: "매일 배우고 기록하는 기술 블로그"
-  image: "https://via.placeholder.com/1200x630/007acc/ffffff?text=Gom's+TIL"
+  # image: "https://via.placeholder.com/1200x630/007acc/ffffff?text=Gom's+TIL"
   type: "website"
 
 # --- 소셜 공유 설정 ---
@@ -87,12 +83,6 @@ social:
 
 # --- 검색 설정 ---
 search: true
-
-# --- 댓글 시스템 ---
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: "your-disqus-shortname"
 
 # --- 분석 도구 ---
 analytics:

@@ -14,9 +14,6 @@ layout: none
     </li>
     {% endfor %}
   </ul>
-  <div class="archive-more">
-    <a href="{{ site.baseurl }}/posts/" class="btn btn--small">전체 보기</a>
-  </div>
 </div>
 
 <style>
@@ -63,25 +60,5 @@ layout: none
   color: #666;
   margin-left: 0.5rem;
   flex-shrink: 0;
-}
-
-.archive-more {
-  text-align: center;
-  margin-top: 1rem;
-}
-
-.btn--small {
-  padding: 0.25rem 0.75rem;
-  font-size: 0.8rem;
-  background-color: #007acc;
-  color: white;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.btn--small:hover {
-  background-color: #005a9e;
-  color: white;
 }
 </style>

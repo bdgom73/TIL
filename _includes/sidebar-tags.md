@@ -10,16 +10,11 @@ layout: none
     {% assign tag_name = tag[0] %}
     {% assign posts_count = tag[1].size %}
     {% assign font_size = posts_count | times: 2 | plus: 12 %}
-    <a href="{{ site.baseurl }}/tags/#{{ tag_name | slugify }}" 
-       class="tag-link" 
-       style="font-size: {{ font_size }}px;">
+    <span class="tag-link" style="font-size: {{ font_size }}px;">
       {{ tag_name }}
       <span class="tag-count">{{ posts_count }}</span>
-    </a>
+    </span>
     {% endfor %}
-  </div>
-  <div class="tags-more">
-    <a href="{{ site.baseurl }}/tags/" class="btn btn--small">전체 태그</a>
   </div>
 </div>
 
@@ -41,19 +36,9 @@ layout: none
   padding: 0.3rem 0.6rem;
   background-color: #e9ecef;
   color: #495057;
-  text-decoration: none;
   border-radius: 15px;
   font-weight: 500;
-  transition: all 0.2s ease;
-  position: relative;
   line-height: 1;
-}
-
-.tag-link:hover {
-  background-color: #007acc;
-  color: white;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .tag-count {
@@ -66,28 +51,5 @@ layout: none
   font-weight: 600;
   min-width: 16px;
   text-align: center;
-}
-
-.tag-link:hover .tag-count {
-  background-color: rgba(255,255,255,0.2);
-}
-
-.tags-more {
-  text-align: center;
-}
-
-.btn--small {
-  padding: 0.25rem 0.75rem;
-  font-size: 0.8rem;
-  background-color: #007acc;
-  color: white;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-}
-
-.btn--small:hover {
-  background-color: #005a9e;
-  color: white;
 }
 </style> 

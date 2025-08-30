@@ -9,10 +9,10 @@ layout: none
     {% assign category_name = category[0] %}
     {% assign posts_count = category[1].size %}
     <div class="category-item">
-      <a href="{{ site.baseurl }}/categories/#{{ category_name | slugify }}" class="category-link">
+      <div class="category-link">
         <span class="category-name">{{ category_name }}</span>
         <span class="category-count">{{ posts_count }}</span>
-      </a>
+      </div>
     </div>
     {% endfor %}
   </div>
@@ -42,18 +42,8 @@ layout: none
   background-color: #f8f9fa;
   border: 1px solid #e9ecef;
   border-radius: 6px;
-  text-decoration: none;
   color: #333;
-  transition: all 0.2s ease;
   font-size: 0.85rem;
-}
-
-.category-link:hover {
-  background-color: #007acc;
-  color: white;
-  border-color: #007acc;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .category-name {
@@ -69,10 +59,5 @@ layout: none
   font-weight: 600;
   min-width: 20px;
   text-align: center;
-}
-
-.category-link:hover .category-count {
-  background-color: rgba(255,255,255,0.2);
-  color: white;
 }
 </style> 
