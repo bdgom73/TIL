@@ -1,8 +1,8 @@
 ---
-title: "Today I Learned: JPA 영속성 컨텍스트(Persistence Context) 핵심 원리"
+title: "JPA 영속성 컨텍스트(Persistence Context) 핵심 원리"
 date: 2025-09-01
 categories: [JPA]
-tags: [JPA, PersistenceContext, TIL]
+tags: [JPA, PersistenceContext]
 excerpt: "JPA의 핵심 메커니즘인 영속성 컨텍스트의 1차 캐시, 쓰기 지연, 변경 감지, 그리고 준영속 상태와 merge()의 동작 원리를 정리합니다."
 author_profile: true
 ---
