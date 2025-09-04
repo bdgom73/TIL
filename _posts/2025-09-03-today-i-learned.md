@@ -1,6 +1,6 @@
 ---
 title: "Spring의 심장, IoC와 DI는 왜 쓸까?"
-date: 2025-09-01
+date: 2025-09-03
 categories: [Spring]
 tags: [Spring, IoC, DI]
 excerpt: "오늘은 매일 당연하게 사용하던 `@Autowired`가 과연 무엇이고, Spring 프레임-워크의 핵심 철학이라는 **IoC(Inversion of Control)**와 **DI(Dependency Injection)**가 왜 필요한지에 대해 근본적인 질문을 던져보았다."
