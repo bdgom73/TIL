@@ -44,7 +44,7 @@ public class Customer {
 
 // OrderRepository 인터페이스
 public interface OrderRepository {
-    List<Order> findByCustomer(CustomerId customerId);
+    List<Order> findByCustomer(Customer customer);
     // ...
 }
 ```
