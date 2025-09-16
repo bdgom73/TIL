@@ -8,5 +8,3 @@
 - [Minimal Mistakes 테마](https://mmistakes.github.io/minimal-mistakes/)
 - [GitHub Pages](https://pages.github.com/)
 - [Markdown 가이드](https://www.markdownguide.org/)
-  
----
