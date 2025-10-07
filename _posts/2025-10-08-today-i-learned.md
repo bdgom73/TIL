@@ -1,6 +1,6 @@
 ---
 title: "MSA의 관문: Spring Cloud Gateway를 넘어 Kong, Apigee 살펴보기"
-date: 2025-10-10
+date: 2025-10-08
 categories: [Architecture, MSA]
 tags: [API Gateway, Kong, Apigee, Spring Cloud Gateway, MSA, TIL]
 excerpt: "Spring Cloud Gateway를 넘어, 엔터프라이즈 환경에서 널리 사용되는 전문 API Gateway 솔루션인 Kong과 Apigee의 특징과 장단점을 비교 분석합니다. 각 솔루션이 어떤 상황에 더 적합한지 그 차이점을 알아봅니다."
