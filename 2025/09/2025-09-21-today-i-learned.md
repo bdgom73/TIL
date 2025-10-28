@@ -27,10 +27,11 @@ Spring Boot 애플리케이션의 Docker 이미지를 만들 때, 소스코드, 
 #### **Dockerfile 예시 (Before vs After)**
 
 **❌ Before: 단일 스테이지**
+
 ```dockerfile
 # 빌드 환경과 실행 환경이 분리되지 않음
 FROM openjdk:17
-COPY . .
+COPY ../../_posts .
 RUN ./gradlew build
 # 빌드 후 생성된 불필요한 파일들이 이미지에 남음
 EXPOSE 8080
