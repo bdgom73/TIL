@@ -1,6 +1,6 @@
 ---
 title: "Chaos Engineering: 의도적으로 장애를 주입해 시스템 회복탄력성 검증하기"
-date: 2025-10-31
+date: 2025-11-01
 categories: [DevOps, Architecture]
 tags: [Chaos Engineering, Resilience, DevOps, Spring Boot, Chaos Monkey, TIL]
 excerpt: "내 시스템의 Circuit Breaker나 Failover가 '정말로' 동작하는지 확인하기 위해 '의도적으로' 장애를 주입하는 Chaos Engineering의 개념을 학습합니다. Netflix의 Chaos Monkey 원리와 Spring Boot 환경에서 이를 적용하는 방법을 탐구합니다."

@@ -1,6 +1,6 @@
 ---
 title: "Testcontainers: Spring Boot 통합 테스트의 혁명"
-date: 2025-10-30
+date: 2025-10-31
 categories: [Test, DevOps]
 tags: [Testcontainers, Integration Testing, Spring Boot, JUnit, Docker, MySQL, TIL]
 excerpt: "JPA Repository나 DB 의존성이 있는 통합 테스트 시, H2 같은 인메모리 DB의 한계를 알아보고, Testcontainers를 사용하여 실제 운영 환경과 '동일한' DB(MySQL)를 Docker 컨테이너로 띄워 테스트하는 방법을 학습합니다."
