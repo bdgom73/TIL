@@ -2,7 +2,7 @@
 title: "Spring Expression Language (SpEL) 탐구: 단순한 @Value를 넘어"
 date: 2025-11-13
 categories: [Spring, Core]
-tags: [Spring Expression Language, SpEL, @Value, @PreAuthorize, @Cacheable, TIL]
+tags: [Spring Expression Language, SpEL, @PreAuthorize, @Cacheable, TIL]
 excerpt: "Spring의 @Value, @PreAuthorize, @Cacheable 등 강력한 애노테이션의 이면에서 동작하는 'Spring Expression Language (SpEL)'의 문법과 동작 원리를 학습합니다. 단순한 프로퍼티 주입(${...})을 넘어, 런타임에 빈(Bean)의 메서드를 호출하고 동적인 로직을 수행하는 방법을 알아봅니다."
 author_profile: true
 ---
