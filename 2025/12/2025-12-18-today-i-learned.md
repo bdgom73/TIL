@@ -9,7 +9,7 @@ author_profile: true
 
 # Today I Learned: HikariCP Deadlock: 부하 테스트에서 멈춰버린 서버와 적절한 Pool Size 공식
 
-## 📚 오늘 학습한 내용
+## 📚 오늘 학습한 내용 
 
 서비스 오픈 전 nGrinder로 부하 테스트를 진행하던 중, 특정 시점부터 서버가 요청을 전혀 처리하지 못하고 **Time out**만 뱉어내는 현상을 발견했습니다. DB CPU나 메모리는 여유로운데 애플리케이션만 멈춘 상황. 스레드 덤프를 분석해 보니 모든 스레드가 DB 커넥션을 얻기 위해 대기(`HikariCP getConnection()`)하고 있었습니다.
 
@@ -17,7 +17,7 @@ author_profile: true
 
 ---
 
-### 1. **HikariCP Deadlock이란? 💀**
+### 1. **HikariCP Deadlock이란?**
 
 이 데드락은 DB 엔진(MySQL, Oracle) 내부의 Row Lock/Table Lock과는 다릅니다. 애플리케이션 내부에서 **제한된 자원(Connection Pool)을 서로 기다리다가** 발생하는 교착 상태입니다.
 
