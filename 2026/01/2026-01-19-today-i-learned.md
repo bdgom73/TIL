@@ -1,6 +1,6 @@
 ---
 title: "데이터 삭제는 신중하게: JPA Soft Delete(논리 삭제) 구현과 Unique Index 충돌 해결"
-date: 2026-01-20
+date: 2026-01-19
 categories: [Spring, JPA, Database]
 tags: [Soft Delete, Hibernate, SQLDelete, Unique Constraint, JPA, Database Design, TIL]
 excerpt: "데이터를 물리적으로 삭제하지 않고 상태만 변경하는 Soft Delete 패턴을 Hibernate 애노테이션(@SQLDelete)으로 우아하게 구현하는 방법을 학습합니다. 더불어 Soft Delete 적용 시 발생하는 Unique Constraint(중복 가입 방지) 충돌 문제와 이를 해결하기 위한 DB 인덱스 설계 전략을 정리합니다."
